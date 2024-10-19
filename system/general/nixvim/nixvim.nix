@@ -20,6 +20,18 @@
     # Global
     # Default mode is "" which means normal-visual-op
     {
+      mode = "i";
+      key = "kj";
+      action = "<esc>";
+    }
+
+    {
+      mode = "i";
+      key = "jk";
+      action = "<esc>";
+    }
+
+    {
       key = "<C-n>";
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";
