@@ -1,8 +1,8 @@
 {pkgs, ...}: {
-  programs.zellij {
+  programs.zellij = {
     enable = true;
-    settings{
+    settings = {
       theme = "gruvbox";
     };
-
+  };
 }
