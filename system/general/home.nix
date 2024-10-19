@@ -1,8 +1,9 @@
 { config, pkgs, ... }: {
     
   imports = [
-    ./../../system/general/term.nix
-    ./../../system/general/kitty.nix
+    ./../../system/general/term/term.nix
+    ./../../system/general/term/kitty.nix
+    ./../../system/general/term/zellij.nix
     ./../../system/general/nixvim/nixvim.nix    
   ];
 
@@ -19,7 +20,7 @@
   };
 
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
