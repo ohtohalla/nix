@@ -22,6 +22,9 @@
         tidal-hifi
         cmus
         dconf2nix
+        at-spi2-core
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-wlr
     ];    
 
 

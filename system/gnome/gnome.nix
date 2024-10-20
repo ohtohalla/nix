@@ -1,43 +1,16 @@
 { pkgs, lib, ... }:
 
-let
-  mkBoolean = lib.gvariant.mkBoolean;
-in
 {
-  # ...
-  gtk = {
-    enable = true;
+  imports = [
+    ./gtk.nix
+  ];
 
-    iconTheme = {
-      name = "Gruvbox-Dark";
-      package = pkgs.gruvbox-dark-icons-gtk;
-    };
+   home.packages = with pkgs; [
+   gnomeExtensions.tactile
+   gnomeExtensions.tiling-assistant
+   gnomeExtensions.espresso
+  ];
 
-    theme = {
-      name = "gruvbox-dark-gtk";
-      package = pkgs.gruvbox-dark-gtk;
-    };
-
-    cursorTheme = {
-      name = "Numix-Cursor";
-      package = pkgs.numix-cursor-theme;
-    };
-
-    gtk3.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-
-    gtk4.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-  };
-
-  home.sessionVariables.GTK_THEME = "gruvbox-dark-gtk";
-  # ...
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
@@ -50,7 +23,12 @@ in
         "org.gnome.Nautilus.desktop"
       ];
       disable-user-extensions = false;
-    };
+         enabled-extensions = [
+       "tiling-assistant@leleat-on-github"
+       "user-theme@gnome-shell-extensions.gcampax.github.com"
+       "tactile@lundal.io"
+       "espresso@coadmunkee.github.com"];
+      };
     "org/gnome/desktop/peripherals" = {
       "touchpad/natural-scroll" = false;
       "touchpad/tap-to-click" = true;
@@ -58,3 +36,4 @@ in
       };
     };
 }
+
