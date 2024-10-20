@@ -55,6 +55,7 @@ nixosConfigurations = {
             home-manager.sharedModules = [ nixvim.homeManagerModules.nixvim ];          
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
             home-manager.users.juhokajava = {
               imports = [
                 ./hosts/seipi-666/seipi-666-home.nix

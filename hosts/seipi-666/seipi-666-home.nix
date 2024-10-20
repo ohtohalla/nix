@@ -4,6 +4,7 @@
 
   imports = [
     ./../../system/general/home.nix
+    ./../../system/gnome/gnome.nix
   ];
 
 }

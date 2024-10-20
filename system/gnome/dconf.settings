@@ -1,0 +1,8 @@
+[org/gnome/desktop/peripherals/mouse]
+natural-scroll=true
+speed=-0.5
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=true
+two-finger-scrolling-enabled=true
+natural-scroll=false

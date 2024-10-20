@@ -8,7 +8,20 @@
         git
         firefox-devedition
         reaper
-
+        gnome-tweaks
+        zathura
+        texliveFull
+        obsidian
+        signal-desktop
+        signal-cli
+        telegram-desktop
+        tg
+        zapzap
+        bitwarden-desktop
+        bitwarden-cli
+        tidal-hifi
+        cmus
+        dconf2nix
     ];    
 
 
