@@ -25,8 +25,6 @@
 
   outputs = inputs@{ nixpkgs-stable, home-manager, nixvim, self, nix-darwin, nixpkgs, nix-homebrew }:
   
-  
-  
   let
   
     configuration = { pkgs, config, ... }: {
@@ -44,8 +42,32 @@
     
   in
   {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
+nixosConfigurations = {
+      seipi-666 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          {
+            imports = [ ./hosts/seipi-666/configuration.nix ];
+            _module.args.self = self;
+          }
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.sharedModules = [ nixvim.homeManagerModules.nixvim ];          
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.juhokajava = {
+              imports = [
+                ./hosts/seipi-666/seipi-666-home.nix
+              ];
+              _module.args.self = self;
+              _module.args.host = "seipi-666";
+              _module.args.inputs = inputs;
+            };
+          }
+        ];
+      };
+    };  
+  
     darwinConfigurations = {
       home-macbook-pro = nix-darwin.lib.darwinSystem {
       modules = [

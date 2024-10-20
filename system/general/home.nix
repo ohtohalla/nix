@@ -4,7 +4,8 @@
     ./../../system/general/term/term.nix
     ./../../system/general/term/kitty.nix
     ./../../system/general/term/zellij.nix
-    ./../../system/general/nixvim/nixvim.nix    
+    ./../../system/general/nixvim/nixvim.nix 
+    ./git.nix
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.

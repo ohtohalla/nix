@@ -1,4 +1,5 @@
 {pkgs, config, ...}: {
+
     programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -7,7 +8,7 @@
 
     shellAliases = {
         ll = "ls -la";
-        update = "sudo nixos-rebuild switch";
+        update = "sudo nixos-rebuild switch --flake";
         home = "cd && clear";
         
     };
