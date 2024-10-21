@@ -11,10 +11,21 @@
     homebrew = {
     enable = true;
     brews = [
-        #"mas"
+        "wireguard-go"
     ];
     casks = [
         "reaper"
+        "affinity-photo"
+        "affinity-publisher"
+        "affinity-designer"
+        "touchdesigner"
+        "ableton-live-suite"
+        "zotero"
+        "izotope-product-portal"
+        "native-access"
+        "spitfire-audio"
+        "dropbox"
+        "internxt-drive"
 
     ];
     masApps = {
