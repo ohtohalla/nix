@@ -5,7 +5,7 @@
         "/Applications/Telegram.app"
         "/Applications/Signal.app"
         "/Applications/Whatsapp.app"
-        "${pkgs.kitty}/Applications/kitty.app"
+        "/Applications/kitty.app"
         "/Applications/Firefox Developer Edition.app"
         "/Applications/Obsidian.app"
         "/System/Applications/Mail.app"
