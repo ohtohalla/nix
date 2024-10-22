@@ -4,6 +4,10 @@
 
 ### Install Nix
 
-Run ´´´sh <(curl -L https://nixos.org/nix/install)´´´
+Run the following commands
+
+´´´bash
+sh <(curl -L https://nixos.org/nix/install)
+´´´
 
 
