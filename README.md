@@ -1,3 +1,9 @@
-#My NixOS and Nix-Darwin confing
+# My NixOS and Nix-Darwin confing
 
-TBW
+## macOS
+
+### Install Nix
+
+Run ´´´sh <(curl -L https://nixos.org/nix/install)´´´
+
+
