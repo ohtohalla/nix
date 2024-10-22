@@ -5,6 +5,7 @@
         "${pkgs.kitty}/Applications/kitty.app"
         "/Applications/Firefox Developer Edition.app"
         "/Applications/Obsidian.app"
+        "/Applications/TIDAL.app"
         "/System/Applications/Mail.app"
         "/System/Applications/Calendar.app"
         ];
