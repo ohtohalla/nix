@@ -2,6 +2,7 @@
   description = "Ohto's Linux and macOS Nix Configuration";
 
   inputs = {
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
     home-manager.url = "github:nix-community/home-manager";
@@ -23,7 +24,7 @@
 
 
 
-  outputs = inputs@{ nixpkgs-stable, home-manager, nixvim, self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ determinate, nixpkgs-stable, home-manager, nixvim, self, nix-darwin, nixpkgs, nix-homebrew }:
   
   let
   
@@ -75,6 +76,7 @@ nixosConfigurations = {
         ./hosts/home-macbook-pro/home-configuration.nix
         configuration
         nix-homebrew.darwinModules.nix-homebrew
+        determinate.darwinModules.default
         {
           nix-homebrew = {
             enable = true;
@@ -102,6 +104,7 @@ nixosConfigurations = {
         ./hosts/work-macbook-pro/work-configuration.nix
         configuration
         nix-homebrew.darwinModules.nix-homebrew
+        determinate.darwinModules.default
         {
           nix-homebrew = {
             enable = true;
