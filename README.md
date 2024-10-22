@@ -1,6 +1,16 @@
 # My NixOS and Nix-Darwin confing
 
 ## macOS
+### Install Xcode
+
+Run the following command
+
+```bash
+
+xcode-select --install
+
+```
+
 
 ### Install Nix
 
