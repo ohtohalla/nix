@@ -9,4 +9,7 @@
       ./../../profiles/home/home-packages.nix
       ./../../profiles/home/home-dock.nix      
     ];
+
+  programs.zsh.enable = true;
+
 }
