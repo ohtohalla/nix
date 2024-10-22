@@ -15,13 +15,13 @@ sh <(curl -L https://nixos.org/nix/install)
 Use git to download the config
 
 ```bash
-nix-shell -p git --run "git clone https://github.com/ohtohalla/nix.git ~/.config/nix"
+nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.config/nix#home-macbook-pro
 ```
 
 ### Install nix-darwin, home-manager and apply the config
 
 ```bash
-darwin-rebuild switch --flake ~/.config/nix#home-macbook-pro
+nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.config/nix#work-macbook-pro
 ```
 
 If installing a work system, use the command 
