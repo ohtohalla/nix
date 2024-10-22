@@ -6,10 +6,10 @@
 
 Run the following commands
 
-´´´bash
+```bash
 
 sh <(curl -L https://nixos.org/nix/install)
 
-´´´
+```
 
 
