@@ -26,8 +26,7 @@ softwareupdate --install-rosetta
 Run the following command
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
-  sh -s -- install
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install macos
 ```
 
 ### Download the config
