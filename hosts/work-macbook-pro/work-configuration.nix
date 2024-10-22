@@ -9,4 +9,7 @@
       ./../../profiles/work/work-packages.nix
       ./../../profiles/work/work-dock.nix      
     ];
+
+  programs.zsh.enable = true;
+
 }
