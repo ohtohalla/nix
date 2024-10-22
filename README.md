@@ -25,8 +25,10 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 
 Use git to download the config
 
+In a new terminal session run the following command
+
 ```bash
-nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.config/nix#home-macbook-pro
+nix-shell -p git --run "git clone https://github.com/ohtohalla/nix.git ~/.config/nix"
 ```
 
 ### Install nix-darwin, home-manager and apply the config
