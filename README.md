@@ -11,6 +11,15 @@ xcode-select --install
 
 ```
 
+### Install Rosetta 2
+
+Install Rosetta with the following command
+
+```bash
+softwareupdate --install-rosetta
+```
+
+
 
 ### Install Nix
 
