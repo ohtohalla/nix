@@ -29,6 +29,13 @@ Run the following command
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install macos
 ```
 
+After installation, in a new shell, run
+
+```bash
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+```
+
+
 ### Download the config
 
 Use git to download the config
