@@ -1,6 +1,9 @@
 # My NixOS and Nix-Darwin confing
 
 ## macOS
+
+**First, grant the Terminal.app full disk access!!**
+
 ### Install Xcode
 
 Run the following command
