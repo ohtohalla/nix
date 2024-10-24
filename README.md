@@ -61,3 +61,30 @@ If installing a work system, use the command
 nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.config/nix#work-macbook-pro
 ```
 
+#### Addendum
+
+For some reason the Determinate Installer does not always create the `org.nixos.darwin-store.plist`. In such a case, create said file in the path `/Library/LaunchDaemons/`. The file contents should be:
+
+```xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>Label</key>
+  <string>org.nixos.darwin-store</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/sbin/diskutil</string>
+    <string>mount</string>
+    <string>-mountPoint</string>
+    <string>/nix</string>
+    <string><UUID OF THE NIX STORE VOLUME></string>
+  </array>
+</dict>
+</plist>
+
+```
+
