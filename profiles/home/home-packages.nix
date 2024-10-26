@@ -26,6 +26,10 @@
         "spitfire-audio"
         "dropbox"
         "internxt-drive"
+        "vcv-rack"
+        "pd"
+        "plugdata"
+        "orca"
 
     ];
     masApps = {

@@ -38,6 +38,7 @@
         "signal"
         "telegram"
         "whatsapp"
+        "thunderbird"
 
     ];
     masApps = {
