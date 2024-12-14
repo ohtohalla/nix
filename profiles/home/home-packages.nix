@@ -6,6 +6,7 @@
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
         mkalias
+        orca-c
     ];    
 
     homebrew = {
@@ -18,6 +19,7 @@
         "affinity-photo"
         "affinity-publisher"
         "affinity-designer"
+        "inkscape"
         "touchdesigner"
         "ableton-live-suite@10"
         "zotero"
@@ -29,7 +31,9 @@
         "vcv-rack"
         "pd"
         "plugdata"
-        "orca"
+        "focusrite-control"
+        "steam"
+        "discord"
 
     ];
     masApps = {

@@ -15,10 +15,9 @@
     ];
     casks = [
         "microsoft-teams"
-
+        "slack"
     ];
     masApps = {
-        "Slack" = 803453959;
 
     };
     onActivation.cleanup = "zap";

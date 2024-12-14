@@ -2,12 +2,17 @@
     system.defaults = {
     dock.autohide  = true;
     dock.persistent-apps = [
-        "${pkgs.kitty}/Applications/kitty.app"
-        "/Applications/Firefox Developer Edition.app"
-        "/Applications/Obsidian.app"
+        "/Applications/Qobuz.app"
         "/Applications/TIDAL.app"
-        "/System/Applications/Mail.app"
-        "/System/Applications/Calendar.app"
+        "/Applications/Slack.app"
+        "/Applications/Telegram.app/"
+        "/Applications/Signal.app/"
+        "/Applications/WhatsApp.app/"
+        "/Applications/Zen Browser.app"
+        "/Applications/Firefox Developer Edition.app"
+        "/Applications/kitty.app"
+        "Applications/Thunderbird.app"
+        "/Applications/Obsidian.app/"
         ];
     dock.autohide-time-modifier = 0.5;
     dock.autohide-delay = 0.0;

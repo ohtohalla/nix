@@ -17,6 +17,11 @@
 
     homebrew = {
     enable = true;
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+      cleanup = "zap";
+      };
     brews = [
         "mas"
         "neofetch"
@@ -30,6 +35,7 @@
         "zoom"
         "vlc"
         "tidal"
+        "qobuz"
         "zotero"
         "utm"
         "anki"
@@ -39,6 +45,9 @@
         "telegram"
         "whatsapp"
         "thunderbird"
+        "mullvadvpn"
+        "zen-browser"
+        "google-chrome"
 
     ];
     masApps = {
@@ -46,7 +55,6 @@
         "Bitwarden" = 1352778147;
 
     };
-    onActivation.cleanup = "zap";
     };
 
     fonts.packages = [
