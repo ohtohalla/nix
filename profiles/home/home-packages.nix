@@ -21,7 +21,7 @@
         "affinity-designer"
         "inkscape"
         "touchdesigner"
-        "ableton-live-suite@10"
+        "ableton-live-suite"
         "zotero"
         "izotope-product-portal"
         "native-access"
