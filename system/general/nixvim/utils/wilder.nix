@@ -1,8 +1,11 @@
 {
   programs.nixvim.plugins.wilder = {
     enable = true;
-    modes = [ ":" "/" "?" ];
-    renderer = ''wilder.renderer_mux({
+    settings = {
+      modes = [ ":" "/" "?" ];
+    };
+    options = {
+      renderer = ''wilder.renderer_mux({
     [':'] = wilder.popupmenu_renderer({
       highlighter = wilder.basic_highlighter(),
       pumblend = 20,
@@ -13,6 +16,7 @@
     highlighter = wilder.basic_highlighter(),
     }),
     })'';
+    };
     };
 }
 

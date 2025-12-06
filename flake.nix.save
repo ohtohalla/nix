@@ -18,15 +18,23 @@
     nixvim = {
         url = "github:nix-community/nixvim";
         # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
+        inputs.nixpkgs.follows = "nixpkgs";
     };
+     ghostty = {
+        url = "github:clo4/ghostty-hm-module";
+        inputs.nixpkgs.follows = "nixpkgs";
       };
+    color-schemes = {
+      url = "github:mbadolato/iTerm2-Color-Schemes";
+      flake = false;
+      };
+  };
+};
 
+
+
+  outputs = inputs@{ ghostty, color-schemes, determinate, nixpkgs-stable, home-manager, nixvim, self, nix-darwin, nixpkgs, nix-homebrew }:
   
-
-
-
-  outputs = inputs@{ determinate, nixpkgs-stable, home-manager, nixvim, self, nix-darwin, nixpkgs, nix-homebrew }:
- 
   let
   
     configuration = { pkgs, config, ... }: {

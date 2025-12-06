@@ -9,10 +9,10 @@
         fzf
         zellij
         zoxide
+        nerd-fonts.iosevka
+        nerd-fonts.iosevka-term
+        nerd-fonts.iosevka-term-slab
 
-        #(nixvim.legacyPackages."${pkgs.stdenv.hostPlatform.system}".makeNixvim {
-         #   colorschemes.gruvbox.enable = true;
-        #})
     ];    
 
     homebrew = {
@@ -35,7 +35,6 @@
         "zoom"
         "vlc"
         "tidal"
-        "qobuz"
         "zotero"
         "utm"
         "anki"
@@ -45,8 +44,8 @@
         "telegram"
         "whatsapp"
         "thunderbird"
-        "mullvadvpn"
-        "zen-browser"
+        "mullvad-vpn"
+        "zen"
         "google-chrome"
 
     ];
@@ -57,7 +56,4 @@
     };
     };
 
-    fonts.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "Iosevka" ]; })
-    ];
 }

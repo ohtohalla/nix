@@ -6,6 +6,7 @@
     ./../../system/general/term/zellij.nix
     ./../../system/general/nixvim/nixvim.nix 
     ./git.nix
+    ./../../system/general/term/ghostty.nix
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.

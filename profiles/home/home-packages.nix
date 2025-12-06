@@ -31,7 +31,6 @@
         "vcv-rack"
         "pd"
         "plugdata"
-        "focusrite-control"
         "steam"
         "discord"
 

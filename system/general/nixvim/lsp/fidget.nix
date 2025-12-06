@@ -1,10 +1,11 @@
 {
   programs.nixvim.plugins.fidget = {
     enable = true;
-    progress = {
+    settings = {progress = {
       suppressOnInsert = true;
       ignoreDoneAlready = true;
-      pollRate = 0.5;
+      pollRate = 1;
+    };
     };
   };
 }

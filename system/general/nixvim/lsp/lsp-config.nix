@@ -16,7 +16,7 @@
         docker_compose_language_service.enable = true;
         dockerls.enable = true;
         eslint.enable = true;
-        graphql.enable = true;
+        # graphql.enable = true;
         html.enable = true;
         hyprls.enable = true;
         jsonls.enable = true;
@@ -24,7 +24,7 @@
         nginx_language_server.enable = true;
         postgres_lsp.enable = true;
         pylyzer.enable = true;
-        ruff_lsp.enable = true;
+        # ruff_lsp.enable = true;
         sqls.enable = true;
         terraform_lsp.enable = true;
         ts_ls.enable = true;
@@ -43,6 +43,5 @@
         "K" = "hover";
       };
     };
-    rust-tools.enable = true;
   };
 }

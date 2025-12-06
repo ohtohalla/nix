@@ -3,9 +3,10 @@
 { pkgs, ... }: 
 
 {
+    # Disable nix-darwin for determinate
+    nix.enable = false;
 
     # Auto upgrade nix package and the daemon service.
-    services.nix-daemon.enable = true;
     services.karabiner-elements.enable = true;
 
     # Used for backwards compatibility, please read the changelog before changing.
@@ -19,11 +20,12 @@
     nix.extraOptions = ''
         extra-platforms = x86_64-darwin aarch64-darwin
     '';
-
+    # user settings
     users.users.juhokajava = {
         name = "juhokajava";
         home = "/Users/juhokajava";
     };
+    system.primaryUser = "juhokajava";
     system.defaults = {
     finder.FXPreferredViewStyle = "clmv";
     finder.AppleShowAllExtensions = true;
@@ -50,5 +52,5 @@
     trackpad.Dragging = true;
     };
     system.startup.chime = false;
-    security.pam.enableSudoTouchIdAuth = true;
+    security.pam.services.sudo_local.touchIdAuth = true;
 }
