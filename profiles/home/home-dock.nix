@@ -7,7 +7,7 @@
         "/Applications/Signal.app"
         "/Applications/Whatsapp.app"
         "/Applications/Ghostty.app"
-        "/Applications/Zen Browser.app/"
+        "/Applications/Zen.app/"
         "/Applications/Firefox Developer Edition.app"
         "/Applications/Thunderbird.app"
         "/Applications/Obsidian.app"
