@@ -10,7 +10,7 @@
         "/Applications/WhatsApp.app/"
         "/Applications/Zen Browser.app"
         "/Applications/Firefox Developer Edition.app"
-        "/Applications/kitty.app"
+        "/Applications/Ghostty.app"
         "Applications/Thunderbird.app"
         "/Applications/Obsidian.app/"
         ];

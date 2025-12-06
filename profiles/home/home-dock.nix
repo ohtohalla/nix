@@ -6,7 +6,6 @@
         "/Applications/Telegram.app"
         "/Applications/Signal.app"
         "/Applications/Whatsapp.app"
-        "/Applications/kitty.app"
         "/Applications/Ghostty.app"
         "/Applications/Zen Browser.app/"
         "/Applications/Firefox Developer Edition.app"

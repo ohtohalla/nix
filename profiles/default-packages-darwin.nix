@@ -47,6 +47,7 @@
         "mullvad-vpn"
         "zen"
         "google-chrome"
+        "ghostty"
 
     ];
     masApps = {
