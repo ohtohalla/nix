@@ -2,13 +2,12 @@
     system.defaults = {
     dock.autohide  = true;
     dock.persistent-apps = [
-        "/Applications/Qobuz.app"
         "/Applications/TIDAL.app"
         "/Applications/Slack.app"
         "/Applications/Telegram.app/"
         "/Applications/Signal.app/"
         "/Applications/WhatsApp.app/"
-        "/Applications/Zen Browser.app"
+        "/Applications/Zen.app"
         "/Applications/Firefox Developer Edition.app"
         "/Applications/Ghostty.app"
         "Applications/Thunderbird.app"

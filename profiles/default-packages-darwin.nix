@@ -48,6 +48,7 @@
         "zen"
         "google-chrome"
         "ghostty"
+        "zed"
 
     ];
     masApps = {
