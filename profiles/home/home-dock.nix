@@ -8,6 +8,7 @@
         "/Applications/Whatsapp.app"
         "/Applications/Ghostty.app"
         "/Applications/Zen.app/"
+        "Applications/Zed.app"
         "/Applications/Firefox Developer Edition.app"
         "/Applications/Thunderbird.app"
         "/Applications/Obsidian.app"

@@ -10,6 +10,7 @@
         "/Applications/Zen.app"
         "/Applications/Firefox Developer Edition.app"
         "/Applications/Ghostty.app"
+        "/Applications/Zed.app"
         "Applications/Thunderbird.app"
         "/Applications/Obsidian.app/"
         ];
