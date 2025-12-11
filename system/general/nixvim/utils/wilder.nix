@@ -1,22 +1,22 @@
-{
+{lib, nixvim, ...}: {
   programs.nixvim.plugins.wilder = {
     enable = true;
     settings = {
       modes = [ ":" "/" "?" ];
     };
     options = {
-      renderer = ''wilder.renderer_mux({
-    [':'] = wilder.popupmenu_renderer({
-      highlighter = wilder.basic_highlighter(),
+  renderer = lib.nixvim.mkRaw ''
+  wilder.popupmenu_renderer(
+    wilder.popupmenu_border_theme({
+      highlights = { border = 'Normal' },
+      border = 'rounded',
       pumblend = 20,
-      left = {' ', wilder.popupmenu_devicons()},
-      right = {' ', wilder.popupmenu_scrollbar()},
-    }),
-    ['/'] = wilder.wildmenu_renderer({
-    highlighter = wilder.basic_highlighter(),
-    }),
-    })'';
-    };
+    })
+  )
+'';
+  use_python_remote_plugin = 0;
+};
+
     };
 }
 

@@ -9,7 +9,7 @@
         ./utils/autopairs.nix
         ./utils/telescope.nix
         ./utils/toggleterm.nix
-        ./utils/wilder.nix
+        # ./utils/wilder.nix
         ./utils/oil.nix
         ./lsp/trouble.nix
         ./lsp/fidget.nix
