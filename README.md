@@ -26,17 +26,7 @@ softwareupdate --install-rosetta
 
 ### Install Nix
 
-Run the following command for the Determinate Installer 
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install macos
-```
-
-Or this for the original one
-
-```bash
-sh <(curl -L https://nixos.org/nix/install)
-```
+Install the [Determinate Systems Nix package](https://docs.determinate.systems/).
 
 
 After installation, in a new shell, run
